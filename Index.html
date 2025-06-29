@@ -15,47 +15,46 @@
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet" />
     
     <!-- CSS propio -->
-    <link href="..\assets\styles\styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body class="bg-light">
 
-    <!-- Menú -->
-<!-- Menú mejorado -->
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">🚗 AutoFix</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAutoFix" aria-controls="navbarAutoFix" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarAutoFix">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="menuLinks">
-          <li class="nav-item">
-            <a class="nav-link active" href="#servicios"><i class="fas fa-wrench me-1"></i>Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#formulario"><i class="fas fa-edit me-1"></i>Solicitud</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#agenda"><i class="fas fa-calendar-check me-1"></i>Cita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pago"><i class="fas fa-credit-card me-1"></i>Pago</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+    <!-- Menú mejorado -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">🚗 AutoFix</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAutoFix" aria-controls="navbarAutoFix" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarAutoFix">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="menuLinks">
+              <li class="nav-item">
+                <a class="nav-link active" href="#servicios"><i class="fas fa-wrench me-1"></i>Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formulario"><i class="fas fa-edit me-1"></i>Solicitud</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#agenda"><i class="fas fa-calendar-check me-1"></i>Cita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pago"><i class="fas fa-credit-card me-1"></i>Pago</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <main class="container my-5">
+    <main class="container my-5" style="margin-top: 100px;">
         <!-- Servicios -->
-        <main class="container my-5" style="margin-top: 100px;">
+        <section id="servicios" class="mb-5">
             <h2 class="text-center mb-4">Servicios y Precios</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 text-center shadow-sm servicio-card">
-                        <img src="https://cdn-icons-png.flaticon.com/512/21/21141.png" class="card-img-top mx-auto mt-3" alt="Cambio de aceite" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/21/21141.png" class="card-img-top mx-auto mt-3" alt="Cambio de aceite" style="width:100px; height:100px;" />
                         <div class="card-body">
                             <h5 class="card-title">Cambio de aceite</h5>
                             <p class="card-text">Precio: $500 MXN</p>
@@ -64,7 +63,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 text-center shadow-sm servicio-card">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/brake-discs.png" class="card-img-top mx-auto mt-3" alt="Revisión de frenos" />
+                        <img src="https://img.icons8.com/ios-filled/150/000000/brake-discs.png" class="card-img-top mx-auto mt-3" alt="Revisión de frenos" style="width:100px; height:100px;" />
                         <div class="card-body">
                             <h5 class="card-title">Revisión de frenos</h5>
                             <p class="card-text">Precio: $700 MXN</p>
@@ -73,7 +72,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 text-center shadow-sm servicio-card">
-                        <img src="https://img.icons8.com/ios-filled/150/000000/car-battery.png" class="card-img-top mx-auto mt-3" alt="Diagnóstico eléctrico" />
+                        <img src="https://img.icons8.com/ios-filled/150/000000/car-battery.png" class="card-img-top mx-auto mt-3" alt="Diagnóstico eléctrico" style="width:100px; height:100px;" />
                         <div class="card-body">
                             <h5 class="card-title">Diagnóstico eléctrico</h5>
                             <p class="card-text">Precio: $600 MXN</p>
@@ -93,7 +92,6 @@
                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                         <input type="text" class="form-control" id="clienteNombre" placeholder="Ingresa tu nombre completo" required />
                     </div>
-                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
                 </div>
                 
                 <div class="mb-4">
@@ -107,7 +105,6 @@
                             <option value="Diagnóstico eléctrico">Diagnóstico eléctrico ($600 MXN)</option>
                         </select>
                     </div>
-                    <div class="invalid-feedback">Por favor, selecciona un servicio.</div>
                 </div>
                 
                 <div class="mb-4">
@@ -116,7 +113,6 @@
                         <span class="input-group-text"><i class="fas fa-file-alt"></i></span>
                         <textarea class="form-control" id="descripcion" rows="3" placeholder="Describe brevemente el problema..." required></textarea>
                     </div>
-                    <div class="invalid-feedback">Por favor, describe el problema.</div>
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Enviar solicitud</button>
@@ -133,7 +129,6 @@
                         <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
                         <input type="date" class="form-control" id="fecha" required />
                     </div>
-                    <div class="invalid-feedback">Por favor, selecciona una fecha.</div>
                 </div>
                 <div class="mb-3">
                     <label for="hora" class="form-label fw-bold">Hora</label>
@@ -141,7 +136,6 @@
                         <span class="input-group-text"><i class="fas fa-clock"></i></span>
                         <input type="time" class="form-control" id="hora" required />
                     </div>
-                    <div class="invalid-feedback">Por favor, selecciona una hora.</div>
                 </div>
                 <button type="submit" class="btn btn-primary">Agendar</button>
             </form>
@@ -169,7 +163,7 @@
     <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
     
-    <!-- JS -->
-    <script src="..\assets\scripts\scripts.js"></script>
+    <!-- JS propio -->
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

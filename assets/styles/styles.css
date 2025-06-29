@@ -1,47 +1,23 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    scroll-behavior: smooth;
 }
 
 header {
     background-color: #2b3d52;
 }
 
-/* Menú */
-nav.menu .nav-link {
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav.menu .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: #ffa500 !important;
     font-weight: bold;
 }
 
-/* Cards servicios */
 .servicio-card img.card-img-top {
     width: 100px !important;
     height: 100px !important;
     object-fit: contain;
 }
 
-/* Footer */
 footer {
     margin-top: 40px;
-}
-
-/* Validación Bootstrap adicional para mejor feedback */
-.was-validated .form-control:invalid,
-.was-validated .form-select:invalid,
-.was-validated .form-control:invalid {
-    border-color: #dc3545;
-}
-
-.was-validated .form-control:valid,
-.was-validated .form-select:valid,
-.was-validated .form-control:valid {
-    border-color: #198754;
 }
