@@ -1,40 +1,46 @@
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
 }
 
 header {
-  background-color: #2b3d52;
-  padding: 10px 20px;
-  color: white;
+    background-color: #2b3d52;
 }
 
-.menu ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+/* Menú */
+nav.menu .nav-link {
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.menu li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+nav.menu .nav-link:hover,
+nav.menu .nav-link.active {
+    color: #ffa500 !important;
 }
 
-section {
-  margin: 30px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+/* Cards servicios */
+.servicio-card img.card-img-top {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: contain;
 }
 
+/* Footer */
 footer {
-  background-color: #2b3d52;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+    margin-top: 40px;
+}
+
+/* Validación Bootstrap adicional para mejor feedback */
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid,
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-control:valid,
+.was-validated .form-select:valid,
+.was-validated .form-control:valid {
+    border-color: #198754;
 }
