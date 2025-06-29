@@ -16,8 +16,9 @@ nav.menu .nav-link {
 }
 
 nav.menu .nav-link:hover,
-nav.menu .nav-link.active {
+.navbar-nav .nav-link.active {
     color: #ffa500 !important;
+    font-weight: bold;
 }
 
 /* Cards servicios */

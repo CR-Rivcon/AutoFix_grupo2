@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav.menu .nav-link");
+    const navLinks = document.querySelectorAll("#menuLinks .nav-link");
 
     // Detectar sección visible y activar enlace correspondiente
     window.addEventListener("scroll", () => {
